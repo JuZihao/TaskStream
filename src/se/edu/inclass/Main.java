@@ -40,10 +40,8 @@ public class Main {
     }
 
     public static void printDeadlines(ArrayList<Task> tasksData) {
-        for (Task t : tasksData) {
-            if (t instanceof Deadline) {
-                System.out.println(t);
-            }
-        }
+        tasksData.stream()
+                .filter(if(tasksData instanceof deadline))
+        .forEach(System.out.println(tasksData););
     }
 }
